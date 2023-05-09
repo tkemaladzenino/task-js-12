@@ -15,27 +15,18 @@
 
     <script type="text/javascript">
 
-        window.onload = btn;
-
-        function btn() {
-            document.getElementById("btn").onclick = printHello;
-        }
-
         function printHello() {
-            var text = "";
-
             var input1 = document.getElementById("number1").value;
+            var text = "";
             var x = 1;
             while (x <= input1) {
-
                 text += "hello world, ";
                 x++;
             }
             document.getElementById("show").innerHTML = text;
-        }
 
+        } 
     </script>
-
 </head>
 
 <body style="padding-top: 50px; padding-left: 50px; padding-right: 50px;">
@@ -48,10 +39,8 @@
                 style=" background-color: rgb(52, 198, 52); color: white; width: 90px;">
         </form>
     </div> <br>
-    <button type="button" class="btn btn-danger" id="btn">შედეგის ნახვა</button><br><br>
+    <button type="button" class="btn btn-danger" onclick="printHello()" id="btn">შედეგის ნახვა</button><br><br>
     <p id="show" style="color: darkblue;"></p>
-
-
 
 
 
